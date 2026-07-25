@@ -187,10 +187,10 @@ export default function DetailsSection({ t }: DetailsSectionProps) {
           <div ref={rightColRef} className="space-y-6">
             {/* Dress Code */}
             <div
-              className="detail-card glass-card p-6 sm:p-8"
+              className="detail-card glass-card p-5 sm:p-5"
               style={{ opacity: 0 }}
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3">
                 <div
                   className="detail-icon flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center"
                   style={{ background: 'rgba(201, 169, 110, 0.15)' }}
