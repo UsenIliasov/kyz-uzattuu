@@ -14,7 +14,7 @@ import InvitationSection from './sections/InvitationSection';
 import CountdownSection from './sections/CountdownSection';
 import DetailsSection from './sections/DetailsSection';
 import MapSection from './sections/MapSection';
-import PhotoCollectionSection from './sections/PhotoCollectionSection';
+// import PhotoCollectionSection from './sections/PhotoCollectionSection';
 import TimelineSection from './sections/TimelineSection';
 import FooterSection from './sections/FooterSection';
 
