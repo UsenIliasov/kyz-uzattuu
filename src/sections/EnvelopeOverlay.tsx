@@ -224,7 +224,7 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
           lineHeight: 1,
           whiteSpace: 'nowrap',
         }}>
-          Кыз Узаттуу <span style={{ color: '#6B2737' }}>Алины</span>
+          Кыз Узатуу <span style={{ color: '#6B2737' }}>Алины</span>
         </h1>
       </div>
 
@@ -492,7 +492,7 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
         <h2 className="card-reveal font-display text-center" style={{
           fontSize: 'clamp(1.8rem, 5.5vw, 2.8rem)', fontWeight: 300, color: '#2C2421', lineHeight: 1.05, opacity: 0,
         }}>
-          Кыз Узаттуу
+          Кыз Узатуу
         </h2>
 
         <p className="card-reveal font-script text-center" style={{
@@ -521,7 +521,7 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
         <p className="card-reveal font-body text-center" style={{
           color: '#2C2421', fontSize: 'clamp(0.75rem, 2vw, 0.85rem)', letterSpacing: '0.05em', opacity: 0,
         }}>
-          Ресторан Жаннат, Бишкек
+          Ресторан Jannat, Бишкек
         </p>
 
         {/* Bottom ornament */}

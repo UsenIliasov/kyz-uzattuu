@@ -150,7 +150,7 @@ export default function DetailsSection({ t }: DetailsSectionProps) {
                     {t('28 Августа 2026', '2026-жылдын 28-августу')}
                   </p>
                   <p className="font-body" style={{ color: '#2C2421', fontSize: '1rem', opacity: 0.8 }}>
-                    18:00
+                    16:00
                   </p>
                 </div>
               </div>

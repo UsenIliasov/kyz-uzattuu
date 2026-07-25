@@ -204,7 +204,7 @@ export default function CountdownSection({ t }: CountdownSectionProps) {
             letterSpacing: '0.05em',
           }}
         >
-          {t('28 Августа 2026', '2026-жылдын 28-августу')} &middot; 18:00
+          {t('28 Августа 2026', '2026-жылдын 28-августу')} &middot; 16:00
         </p>
       </div>
     </section>

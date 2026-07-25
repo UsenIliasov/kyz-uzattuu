@@ -90,7 +90,7 @@ function App() {
         <CountdownSection t={t} />
         <DetailsSection t={t} />
         <MapSection t={t} />
-        <PhotoCollectionSection t={t} />
+        {/* <PhotoCollectionSection t={t} /> */}
         <TimelineSection t={t} />
         <FooterSection t={t} />
       </main>

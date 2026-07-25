@@ -147,7 +147,7 @@ export default function HeroSection({ t }: HeroSectionProps) {
             marginBottom: '0.25rem',
           }}
         >
-          {splitChars(t('Кыз Узаттуу', 'Кыз Узаттуу'))}
+          {splitChars(t('Кыз Узатуу', 'Кыз Узатуу'))}
         </h1>
 
         {/* Bride name */}
@@ -220,7 +220,7 @@ export default function HeroSection({ t }: HeroSectionProps) {
             letterSpacing: '0.05em',
           }}
         >
-          {splitChars(t('Ресторан Жаннат, Бишкек', 'Ресторан Жаннат, Бишкек'))}
+          {splitChars(t('Ресторан Jannat, Бишкек', 'Ресторан Jannat, Бишкек'))}
         </p>
       </div>
 

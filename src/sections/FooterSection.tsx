@@ -57,6 +57,13 @@ export default function FooterSection({ t }: FooterSectionProps) {
         className="relative z-10 max-w-2xl mx-auto px-6 sm:px-8 text-center"
       >
         {/* Names */}
+        <p>
+
+          {
+          t('Той ээлери:',
+          'Организаторы праздника')
+          }
+        </p>
         <p
           className="ft-item font-script mb-2"
           style={{
@@ -65,7 +72,7 @@ export default function FooterSection({ t }: FooterSectionProps) {
             opacity: 0,
           }}
         >
-          Алина & Усенбек
+          Мурат & Эльвира
         </p>
 
         {/* Date */}
