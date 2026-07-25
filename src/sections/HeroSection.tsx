@@ -13,7 +13,7 @@ export default function HeroSection({ t }: HeroSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLVideoElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
   const scrollIndicatorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -94,7 +94,7 @@ export default function HeroSection({ t }: HeroSectionProps) {
     transform: 'scale(1.08)',
   }}
 >
-  <video
+  {/* <video
     ref={imageRef}
     className="absolute inset-0 w-full h-full object-cover"
     autoPlay
@@ -107,7 +107,13 @@ export default function HeroSection({ t }: HeroSectionProps) {
       src="/videos/proposal-video.mp4" 
       type="video/mp4" 
     />
-  </video>
+  </video> */}
+  <img
+        ref={imageRef}
+        src="/images/hero-couple.jpg"
+        alt="Hero background"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 </div>
 
       {/* Gradient overlay */}
