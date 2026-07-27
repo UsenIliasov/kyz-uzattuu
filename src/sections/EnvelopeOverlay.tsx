@@ -218,7 +218,7 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
         }}>
           Приглашение на торжество
         </p>
-        <h1 className="font-script text-center" style={{
+        <h1 className="font-display text-center" style={{
           fontSize: 'clamp(2rem, 6vw, 3.5rem)',
           color: '#2C2421',
           lineHeight: 1,
@@ -396,7 +396,7 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
               width: '40px', height: '40px', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
               border: '1.5px solid rgba(107,39,55,0.15)',
             }} />
-            <span className="font-script relative" style={{
+            <span className="font-display relative" style={{
               color: '#6B2737', fontSize: '1.5rem', textShadow: '0 1px 2px rgba(255,255,255,0.3)', lineHeight: 1,
             }}>А</span>
           </div>
@@ -495,9 +495,9 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
           Кыз Узатуу
         </h2>
 
-        <p className="card-reveal font-script text-center" style={{
+        <p className="card-reveal font-display text-center" style={{
           fontSize: 'clamp(2.8rem, 8vw, 4rem)', color: '#6B2737', marginTop: '-0.3rem',
-          transform: 'rotate(-2deg)', lineHeight: 1, opacity: 0,
+          transform: 'rotate(0deg)', lineHeight: 1, opacity: 0,
         }}>
           Алины
         </p>
