@@ -66,8 +66,8 @@ export default function FooterSection({ t }: FooterSectionProps) {
             fontWeight: 300,
           }}
         >
-          {t('Той ээлери:',
-'Организаторы праздника')}
+          {t('Организаторы праздника',
+'Той ээлери:')}
         </p>
          {/* Names */}
         <p
