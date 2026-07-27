@@ -158,11 +158,11 @@ export default function HeroSection({ t }: HeroSectionProps) {
 
         {/* Bride name */}
         <p
-          className="font-script"
+          className="font-display"
           style={{
             fontSize: 'clamp(2.5rem, 7vw, 5rem)',
             color: '#6B2737',
-            transform: 'rotate(-2deg)',
+            transform: 'rotate(0deg)',
             marginTop: '-0.5rem',
             marginBottom: '0.5rem',
           }}
