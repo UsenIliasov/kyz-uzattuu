@@ -21,60 +21,83 @@ export default function HeroSection({ t }: HeroSectionProps) {
     const text = textRef.current;
     const image = videoContainerRef.current;
     const scrollIndicator = scrollIndicatorRef.current;
+  
     if (!section || !text || !image || !scrollIndicator) return;
-
-    // Image zoom animation
-    gsap.fromTo(
-      image,
-      { scale: 1.08 },
-      { scale: 1, duration: 3, ease: 'power2.out' }
-    );
-
-    // Text reveal animation - split by characters
-    const chars = text.querySelectorAll('.hero-char');
-    gsap.fromTo(
-      chars,
-      { y: 40, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.03,
-        ease: 'power3.out',
-        delay: 0.5,
-      }
-    );
-
-    // Scroll indicator bounce
-    gsap.to(scrollIndicator, {
-      y: 8,
-      duration: 1.2,
-      repeat: -1,
-      yoyo: true,
-      ease: 'sine.inOut',
-    });
-
-    // Fade out on scroll
-    gsap.to(text, {
-      opacity: 0,
-      y: -60,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: section,
-        start: 'top top',
-        end: '50% top',
-        scrub: true,
-      },
-    });
+  
+    const ctx = gsap.context(() => {
+  
+      // Image zoom animation
+      gsap.fromTo(
+        image,
+        { scale: 1.08 },
+        {
+          scale: 1,
+          duration: 3,
+          ease: 'power2.out',
+        }
+      );
+  
+  
+      // Text reveal animation
+      const chars = text.querySelectorAll('.hero-char');
+  
+      gsap.fromTo(
+        chars,
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.03,
+          ease: 'power3.out',
+          delay: 0.5,
+        }
+      );
+  
+  
+      // Scroll indicator
+      gsap.to(scrollIndicator, {
+        y: 8,
+        duration: 1.2,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+      });
+  
+  
+      // Fade out on scroll
+      gsap.to(text, {
+        opacity: 0,
+        y: -60,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: '50% top',
+          scrub: true,
+        },
+      });
+  
+  
+    }, section); // <-- привязка только к этому section
+  
+  
+    return () => {
+      ctx.revert(); // удаляет только эти анимации
+    };
+  
   }, []);
 
   // Helper to split text into character spans
-  const splitChars = (text: string, className: string = '') => {
+  const splitChars = (text: string, className = '') => {
     return text.split('').map((char, i) => (
       <span
-        key={i}
+        key={`${text}-${i}`}
         className={`hero-char inline-block ${className}`}
-        style={{ opacity: 0 }}
+        // style={{ opacity: 0 }}
       >
         {char === ' ' ? '\u00A0' : char}
       </span>

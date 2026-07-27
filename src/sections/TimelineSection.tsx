@@ -146,12 +146,12 @@ export default function TimelineSection({ t }: TimelineSectionProps) {
               >
                 {/* Content */}
                 <div
-                  className={`flex-1 sm:px-12 ${
+                  className={`flex-1 pl-8 sm:px-12 text-left ${
                     index % 2 === 0 ? 'sm:text-right' : 'sm:text-left'
                   }`}
                 >
                   <p
-                    className="font-display"
+                    className="font-body"
                     style={{
                       fontSize: 'clamp(1.5rem, 3vw, 1rem)',
                       fontWeight: 300,
