@@ -55,15 +55,21 @@ export default function FooterSection({ t }: FooterSectionProps) {
       <div
         ref={contentRef}
         className="relative z-10 max-w-2xl mx-auto px-6 sm:px-8 text-center"
-      >
-        {/* Names */}
-        <p>
-
-          {
-          t('Той ээлери:',
-          'Организаторы праздника')
-          }
+      > 
+      <p
+          className="ft-item font-display italic mb-8"
+          style={{
+            fontSize: 'clamp(0.95rem, 1.8vw, 1.1rem)',
+            color: '#F5F0E8',
+            opacity: 0,
+            lineHeight: 1.7,
+            fontWeight: 300,
+          }}
+        >
+          {t('Той ээлери:',
+'Организаторы праздника')}
         </p>
+         {/* Names */}
         <p
           className="ft-item font-script mb-2"
           style={{

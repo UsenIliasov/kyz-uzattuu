@@ -153,10 +153,10 @@ export default function TimelineSection({ t }: TimelineSectionProps) {
                   <p
                     className="font-display"
                     style={{
-                      fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+                      fontSize: 'clamp(1.5rem, 3vw, 1rem)',
                       fontWeight: 300,
                       color: '#6B2737',
-                      lineHeight: 1.2,
+                      lineHeight: 2,
                     }}
                   >
                     {event.time}
@@ -176,7 +176,7 @@ export default function TimelineSection({ t }: TimelineSectionProps) {
 
                 {/* Center dot */}
                 <div
-                  className="absolute left-4 sm:left-1/2 w-4 h-4 rounded-full -translate-x-1/2"
+                  className="absolute left-4 sm:left-1/2 w-2.5 h-2.5 rounded-full -translate-x-1/2"
                   style={{
                     background: '#FAF8F5',
                     border: '2px solid #C9A96E',
