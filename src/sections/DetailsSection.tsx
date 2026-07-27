@@ -202,7 +202,7 @@ export default function DetailsSection({ t }: DetailsSectionProps) {
                     {t('Дресс-код', 'Дресс-код')}
                   </p>
                   <p className="font-body font-medium" style={{ color: '#2C2421', fontSize: '1.1rem' }}>
-                    {t('Элегантный наряд', 'Элеганттык кийим')}
+                    {t('Этно-стиль', 'Этникалык стиль')}
                   </p>
                   <p className="font-body mt-1" style={{ color: '#2C2421', fontSize: '0.9rem', opacity: 0.7, lineHeight: 1.6 }}>
                     {t(
