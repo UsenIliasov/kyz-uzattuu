@@ -117,7 +117,7 @@ export default function InvitationSection({ t }: InvitationSectionProps) {
             className="font-display text-section text-center mb-8"
             style={{ color: '#2C2421', fontWeight: 400, lineHeight: 1.2 }}
           >
-            {splitWords(t('Дорогие друзья и семья!', 'Урматтуу достор жана туугандар!'))}
+            {splitWords(t('Дорогие родные и друзья!', 'Урматтуу достор жана туугандар!'))}
           </h2>
 
           {/* Gold divider */}
@@ -145,7 +145,7 @@ export default function InvitationSection({ t }: InvitationSectionProps) {
                 }}
               >
                 {t(
-                  'С огромной радостью приглашаем вас разделить с нами один из самых важных дней в нашей жизни — торжество Кыз Узатуу нашей дорогой Алины.',
+                  'С огромной радостью приглашаем вас разделить с нами один из самых важных дней в нашей жизни — торжество Кыз Узатуу нашей дочери Алины.',
                   'Биздин жашообуздагы эң маанилүү күндөрдүн бири — Алинанын Кыз Узатуу тоюн биз менен бөлүшүүгө чын жүрөктөн чакырабыз.'
                 )}
               </p>
@@ -177,7 +177,7 @@ export default function InvitationSection({ t }: InvitationSectionProps) {
                   fontSize: 'clamp(1.3rem, 3vw, 1.8rem)',
                 }}
               >
-                {t('С любовью, семья', 'Сүйүү менен, үй-бүлө')}
+                {t('Мурат и Эльвира', 'Мурат и Эльвира')}
               </p>
             </div>
           </div>

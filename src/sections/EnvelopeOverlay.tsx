@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
+import { playMusic } from '../lib/music';
 import gsap from 'gsap';
 
 interface EnvelopeOverlayProps {
@@ -17,6 +18,7 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
   const flowersRef = useRef<HTMLDivElement>(null);
   const [phase, setPhase] = useState<'idle' | 'opening' | 'revealed'>('idle');
   const animatingRef = useRef(false);
+  
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.3 });
@@ -66,8 +68,12 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
 
   const openEnvelope = useCallback(() => {
     if (animatingRef.current || phase !== 'idle') return;
-    animatingRef.current = true;
-    setPhase('opening');
+
+  // Запускаем музыку
+  playMusic();
+
+  animatingRef.current = true;
+  setPhase('opening');
 
     gsap.killTweensOf(sealRef.current);
 
@@ -157,6 +163,7 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
       },
     }, 0.2);
   }, [onOpen]);
+  
 
   return (
     <div
@@ -522,6 +529,11 @@ export default function EnvelopeOverlay({ onOpen }: EnvelopeOverlayProps) {
           color: '#2C2421', fontSize: 'clamp(0.75rem, 2vw, 0.85rem)', letterSpacing: '0.05em', opacity: 0,
         }}>
           Ресторан Jannat, Бишкек
+        </p>
+        <p className="card-reveal font-body text-center" style={{
+          color: '#2C2421', fontSize: 'clamp(0.75rem, 2vw, 0.85rem)', letterSpacing: '0.05em', opacity: 0,
+        }}>
+          Нажмите чтобы продолжить
         </p>
 
         {/* Bottom ornament */}
